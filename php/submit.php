@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 
 $host = getenv('OPENSHIFT_MYSQL_DB_HOST');
-$db = getenv(OPENSHIFT_MYSQL_DB);
+$db = getenv('OPENSHIFT_MYSQL_DB');
 $user = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 $password = getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 
